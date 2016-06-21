@@ -1,0 +1,92 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 379
+  Top = 64
+  Width = 511
+  Height = 496
+  Caption = 'frmPrincipal'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblNormal: TLabel
+    Left = 14
+    Top = 115
+    Width = 33
+    Height = 13
+    Caption = 'Normal'
+  end
+  object lblCriptografado: TLabel
+    Left = 14
+    Top = 263
+    Width = 48
+    Height = 13
+    Caption = 'Resultado'
+  end
+  object lblChave: TLabel
+    Left = 14
+    Top = 64
+    Width = 34
+    Height = 13
+    Caption = 'Chave:'
+  end
+  object lblTamanhoChave: TLabel
+    Left = 14
+    Top = 8
+    Width = 82
+    Height = 13
+    Caption = 'Tamanho Chave:'
+  end
+  object btnCriptografa: TButton
+    Left = 114
+    Top = 427
+    Width = 79
+    Height = 25
+    Caption = 'Criptografa'
+    TabOrder = 4
+    OnClick = btnCriptografaClick
+  end
+  object btnDescriptografa: TButton
+    Left = 278
+    Top = 427
+    Width = 88
+    Height = 25
+    Caption = 'Descriptografa'
+    TabOrder = 5
+    OnClick = btnDescriptografaClick
+  end
+  object edtNormal: TMemo
+    Left = 14
+    Top = 133
+    Width = 451
+    Height = 121
+    TabOrder = 2
+  end
+  object edtFinal: TMemo
+    Left = 14
+    Top = 283
+    Width = 451
+    Height = 121
+    TabOrder = 3
+  end
+  object edtChave: TEdit
+    Left = 14
+    Top = 78
+    Width = 453
+    Height = 21
+    TabOrder = 1
+  end
+  object edtTamanhoChave: TEdit
+    Left = 15
+    Top = 27
+    Width = 47
+    Height = 21
+    TabOrder = 0
+    OnExit = edtTamanhoChaveExit
+  end
+end

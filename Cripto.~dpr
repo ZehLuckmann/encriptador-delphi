@@ -1,0 +1,13 @@
+program Cripto;
+
+uses
+  Forms,
+  Principal in 'Principal.pas' {edtFinal};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TedtFinal, edtFinal);
+  Application.Run;
+end.
